@@ -25,7 +25,7 @@ class Solution:
 
             curr.next = ListNode(val % 10)
             curr = curr.next
-            carry = int(val / 10)
+            carry = val // 10
 
         if carry > 0:
             curr.next = ListNode(carry)
